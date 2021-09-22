@@ -1,0 +1,62 @@
+.chat-access{
+    z-index: 268;
+    height: 72px;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #f2f2f2;
+}
+.content{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    pointer-events: all;
+    position: relative;
+
+    &:hover{
+        background-color: lighten(#ea960f, 45%);
+    }
+}
+.text-container{
+    padding-right: 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-tittle{
+    align-items: center;
+    line-height: normal;
+    display: flex;
+}
+.main-content{
+    text-align: left;
+    color: black;
+    display: flex;
+    flex-grow: 1;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    overflow: hidden;
+}
+.secondary-content{
+    margin-top: 3px;
+    margin-left: 6px;
+    line-height: 14px;
+    flex: none;
+    font-size: 15px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.text{
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &.capitalize{
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,55 @@
+//Variables
+@import 'variables';
+
+//Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Utilities
+@import "utilities";
+
+//Mixins
+@import "mixins";
+
+//Animations
+@import "animations";
+
+//Generals
+@import "generals";
+
+//Editshow styles
+@import "editshow";
+
+//Booking show styles
+@import "booking";
+
+//reviewShow
+@import "reviewshow";
+
+//payments
+@import "payments";
+
+//landing page
+@import "landingpage";
+
+//Slick Carousell
+@import '../vendor/slick/slick-theme.css';
+@import '../vendor/slick/slick';
+
+//International Telephone input
+@import "~intl-tel-input/build/css/intlTelInput.min.css";
+
+//gijgo
+@import "./vendor/gijgo/gijgo.min.css";
+
+//icomoon
+@import "./vendor/icomoon/style.css";
+
+//flickity
+@import "./vendor/flickity/flickity.css";
+
+//flags
+@import "./vendor/flags/flags.css";
+
+//dropzone
+@import "./dropzone/basic.css";
+@import "./dropzone/dropzone.css";

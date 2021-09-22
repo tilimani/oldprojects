@@ -1,0 +1,1004 @@
+.procesStatusContainer.user.online.waiting li:nth-child(1) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.online.waiting li:nth-child(2) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.online.waiting li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.waiting li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.waiting li:nth-child(5) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.online.waiting li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.waiting li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.waiting li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(4) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(5) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.available li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(6) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.confirmed li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(6) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(7) span {
+  background-color: red;
+}
+
+.procesStatusContainer.user.online.payment-cancelled li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.payment-check li:nth-child(8) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(1) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.deny li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(1) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.online.block li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.waiting li:nth-child(1) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.offline.waiting li:nth-child(2) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.offline.waiting li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.waiting li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.waiting li:nth-child(5) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.offline.waiting li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.waiting li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.available li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.available li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.available li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.available li:nth-child(4) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.user.offline.available li:nth-child(5) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.user.offline.available li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.available li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.confirmed li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.confirmed li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.confirmed li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.confirmed li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.confirmed li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.confirmed li:nth-child(6) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.user.offline.confirmed li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment li:nth-child(6) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-cancelled li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment-cancelled li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-cancelled li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment-cancelled li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment-cancelled li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-cancelled li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-cancelled li:nth-child(7) span {
+  background-color: red;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(4) span {
+  background-color: green;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.user.offline.payment-check li:nth-child(8) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(4) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(4):hover {
+  background-color: #f9f9f9;
+  cursor: initial;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(6) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.waiting li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(4) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(4):hover {
+  background-color: #f9f9f9;
+  cursor: initial;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(6) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.available li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(7) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.confirmed li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(7) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(8) span {
+  background-color: red;
+}
+
+.procesStatusContainer.manager.online.payment-cancelled li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.payment-check li:nth-child(9) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(1) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.deny li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(1) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.online.block li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(2) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(3) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(4) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(4):hover {
+  background-color: #f9f9f9;
+  cursor: initial;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(6) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.available li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(4) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(4):hover {
+  background-color: #f9f9f9;
+  cursor: initial;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(5) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(6) span {
+  background-color: darkgrey;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(7) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.visited li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(7) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.confirmed li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(7) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(7) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(8) {
+  background-color: red;
+}
+
+.procesStatusContainer.manager.offline.payment-cancelled li:nth-child(9) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(1) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(2) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(3) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(4) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(5) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(6) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(7) span {
+  background-color: green;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(8) {
+  display: none;
+}
+
+.procesStatusContainer.manager.offline.payment-check li:nth-child(9) span {
+  background-color: #ea960f;
+}
+
+.procesStatusContainer li {
+  border-bottom: 1px solid lightgray;
+}
+
+.procesStatusContainer li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.procesStatusContainer li:nth-child(n) span i {
+  color: white;
+  padding: 0.25em;
+}
+
+.procesStatusContainer li:nth-child(n) span {
+  border-radius: 5em;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+}
+
+.process-deny-button {
+  background-color: white;
+  border-color: white;
+  color: black !important;
+}
+
+.process-deny-button:hover {
+  background-color: #cccccc;
+  border-color: white;
+}
+
+.confirmation-modal .modal-header {
+  border-bottom: none;
+}
+
+.confirmation-modal .modal-header .close {
+  font-size: 38px;
+  padding: 1.2rem 1.5rem 0 1.2rem;
+}
+
+.confirmation-modal .modal-content {
+  border-radius: 25px;
+}
+
+.sticky-0 {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  z-index: 30 !important;
+  top: 0 !important;
+}
+/*# sourceMappingURL=ProcesStatus.css.map */

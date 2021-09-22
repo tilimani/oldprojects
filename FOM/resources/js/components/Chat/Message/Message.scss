@@ -1,0 +1,258 @@
+.Message {
+    color: rgb(95, 95, 95);
+    width: fit-content;    
+    font-family: NunitoRegular;
+    padding: 3px 10px;
+    word-wrap: break-word;      
+    &.my-message {
+        border: #dad9d9 solid 1px;
+        border-radius: 15px 15px 0 15px;        
+        margin: 3px 0 0 auto;
+    }
+
+    &.other-message {
+        background-color: #ededed;
+        border-radius: 15px 15px 15px 0;    
+        margin: 3px 0 0 0;    
+    }
+}
+.time {        
+    font-size: 10px;
+    font-family: NunitoRegular;
+    color: #d3d2d1;
+}
+
+.right-aligned {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+.sending{
+    height: 1rem;
+    width: 0.8rem;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    background-image: url('../../images/sending.png');
+    background-position: 0px 5px;
+}
+
+.sended{
+    height: 0.8rem;
+    width: 0.9rem;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    background-image: url('../../images/sended.png');
+    background-position: 0px 5px;
+}
+
+.readed{
+    height: 0.8rem;
+    width: 0.9rem;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    background-image: url('../../images/readed.png');
+    background-position: 0px 5px;
+}
+
+
+
+.message-chat {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+    position: relative;
+
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    .message{
+        border-radius: 30px;
+        box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+        font-size: 14.2px;
+        line-height: 19px;
+        position: relative;
+        color: rgb(95, 95, 95);
+        font-family: NunitoRegular;
+
+        @media screen and(min-width: 1301px) {
+            min-width: 20%;
+            max-width: 70%;
+        }
+
+        &.in{
+            background-color: rgba(0.33,0.33,0.33,0.1);
+            float: left;
+            &.tail {
+                border-bottom-left-radius: 0;
+            }
+            .text-container {
+                padding: 6px 7px 8px 9px;
+                box-sizing: border-box;
+
+                .copyable-text{
+                    user-select: text;
+                }
+
+                .text-holder {
+                    position: relative;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    padding: 6px 10px;
+
+                    &:after {
+                        content: "";
+                        margin-left: 78px;
+                        display: inline;
+                    }
+                    span{
+                        
+                        &.selectable-text {
+                            user-select: text;
+
+                            &.invisible-space{
+                                &:after{
+                                    content: "";
+                                    display: inline-block;
+                                    width: 0;   
+                                }
+                            }
+                        }
+                        &::after{
+                            content: "";
+                            display: inline-block;
+                            width: 0;
+                        }
+                    }
+                }
+            }
+            .time-container {
+                box-sizing: border-box;
+                .copyable-text {
+                    user-select: text;
+
+                    .time-holder {
+                        font-size: xx-small;
+                        position: absolute;
+                        display: flex;
+                        flex: auto;
+                        overflow: hidden;
+                        align-items: flex-start;
+                        transform-origin: left bottom;
+                        left: 0;
+                        span {
+                            &.selectable-text {
+                                user-select: text;
+    
+                                &.invisible-space{
+                                    &:after{
+                                        content: "";
+                                        display: inline-block;
+                                        width: 0;   
+                                    }
+                                }
+                            }
+                            &::after{
+                                content: "";
+                                display: inline-block;
+                                width: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.out{
+            float: right;
+            background-color: lighten(#ea960f, 30%);
+            &.tail {
+                border-bottom-right-radius: 0;
+            }
+            .text-container {
+                padding: 6px 7px 8px 9px;
+                box-sizing: border-box;
+
+                .copyable-text{
+                    user-select: text;
+                }
+
+                .text-holder {
+                    position: relative;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    padding: 6px 10px;
+
+                    &:after {
+                        content: "";
+                        margin-right: 78px;
+                        display: inline;
+                    }
+                    span{
+                        
+                        &.selectable-text {
+                            user-select: text;
+
+                            &.invisible-space{
+                                &:after{
+                                    content: "";
+                                    display: inline-block;
+                                    width: 0;   
+                                }
+                            }
+                        }
+                        &::after{
+                            content: "";
+                            display: inline-block;
+                            width: 0;
+                        }
+                    }
+                }
+            }
+            .time-container {
+                font-size: xx-small;
+                position: absolute;
+                display: flex;
+                flex: auto;
+                overflow: hidden;
+                align-items: flex-end;
+                transform-origin: right bottom;
+                right: 0;
+                box-sizing: border-box;
+                .copyable-text {
+                    user-select: text;
+                    .time-holder {
+                        position: relative;
+                        span {
+                            &.selectable-text {
+                                user-select: text;
+                                white-space: nowrap;
+                                &.invisible-space{
+                                    &:after{
+                                        content: "";
+                                        display: inline-block;
+                                        width: 0;   
+                                    }
+                                }
+                            }
+                            &::after{
+                                content: "";
+                                display: inline-block;
+                                width: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+}

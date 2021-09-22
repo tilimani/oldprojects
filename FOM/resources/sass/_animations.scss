@@ -1,0 +1,156 @@
+@keyframes loadElement {
+    0%{
+        opacity: 0;
+    }
+    // 15%{
+    //     opacity: 0.15;
+    // }
+    // 30%{
+    //     opacity: 0.3;
+    // }
+    // 45%{
+    //     opacity: 0.45;
+    // }
+    // 65%{
+    //     opacity: 0.65;
+    // }
+    // 75%{
+    //     opacity: 0.75;
+    // }
+    // 90%{    
+    //     opacity: 0.90;
+    // }   
+    // 99%{
+    //     opacity: 0.99;
+    // }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+}
+
+@keyframes moveInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes highlightCard{
+    0% {
+        box-shadow: 0 5px 10px #00000033;
+    }
+    50%{
+        box-shadow: 0 5px 10px $primary;
+    }
+    100%{
+        box-shadow: 0 5px 10px #00000033;
+
+    }
+}
+
+@keyframes rotateRightToDown{
+    from{
+        transform: rotate(-45deg)
+    }
+    to{
+        transform: rotate(45deg)
+    }
+}
+
+// @keyframes expandWidth{
+//     0%{
+//         flex: 0%;
+//     }
+//     100%{
+//         flex:100%;
+//     }
+// }
+
+// @keyframes shrinkWidth{
+//     0%{
+//         flex: 100%;
+//     }
+//     100%{
+//         flex: 0%;
+//     }
+// }
+
+@keyframes bounce{
+    0%{
+        transform: rotate(90deg) translateX(0);
+        opacity: 1;
+    }
+    20%{
+        // transform: rotate(90deg) translateX(2px);
+        // opacity: 0.8;
+    }
+    40%{
+        // transform: rotate(90deg) translateX(4px);
+        // opacity: 0.6;
+    }
+    60%{
+        // transform: rotate(90deg) translateX(6px);
+        // opacity: 0.4;
+    }
+    80%{
+        // transform: rotate(90deg) translateX(8px);
+        // opacity: 0.2;
+    }
+    100%{
+        transform: rotate(90deg) translateX(10px);
+        opacity: 0;
+    }
+}
+
+.add-highlight{
+    animation: highlightCard 2s;
+    animation-iteration-count: 4;
+}
+
+.add-rotateRightToDown{
+    animation: rotateRightToDown 1s;
+    animation-fill-mode: forwards;
+}
+
+.add-bounce{
+    animation: bounce 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.add-opacity {
+    animation: loadElement 1s;
+    &-short{
+        animation: loadElement 500ms;
+    }
+}
+
+.add-move-left{
+    animation: moveLeft 1s;
+}
+
+// .add-expandWidth{
+//     animation: expandWidth 1s;
+// }
+
+// .add-shrinkWidth{
+//     animation: shrinkWidth 1s;
+// }

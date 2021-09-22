@@ -1,0 +1,90 @@
+/*Titles*/
+h1{
+    font-family: ArialRounded;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+/*Subtitles*/
+h2{
+    font-family: NunitoBold;
+    font-size: 1.125rem;    
+}
+/*Container Subtitles and Button Text*/
+h3{
+    font-family: NunitoBold;
+    font-size: 0.9375rem;
+}
+/*Text, Button Text inside container,*/
+h4,p{
+    font-family: NunitoRegular;
+    font-size: 0.9375rem;
+}
+/*User info or Testimonials*/
+h5{
+    font-size: 0.9375rem;
+}
+
+.btn-primary{
+    font-size: 0.9375rem;
+    border-radius: 18.461px;
+    line-height: 37px;
+    height: 37px;
+    color: $white;
+    background-color: $primary;
+    &.disabled{
+        background-color: $inactive;
+    }
+}
+
+.radio-button {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      /* background-color: #eee; */
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+    &:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    & input:checked ~ .checkmark {
+      background-color: #ef8e01;
+      border: 1px solid #ef8e01;
+    }
+    & input:checked ~ .checkmark:after {
+        display: block;
+    }
+    & .checkmark:after {
+      top: 5px;
+      left: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #e9e9e9;
+    }
+  }

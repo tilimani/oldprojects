@@ -1,0 +1,100 @@
+.message-chat {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+    position: relative;
+
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+.message {
+    border-radius: 30px;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+    font-size: 14.2px;
+    line-height: 19px;
+    position: relative;
+    color: rgb(95, 95, 95);
+    font-family: NunitoRegular;
+    width: 100%;
+
+    &.in {
+        background-color: rgba(0.33,0.33,0.33,0.1);
+        float: left;
+        &.tail {
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    &.out {
+        float: right;
+        background-color: lighten(#ea960f, 30%);
+        
+        &.tail {
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+.text-container{
+    padding: 6px 7px 8px 9px;
+    box-sizing: border-box;
+}
+
+.copyable-text {
+    user-select: text;
+}
+.text-holder {
+    position: relative;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 6px 10px;
+
+    &::after {
+        content: "";
+        margin-left: 78px;
+        display: inline;
+    }
+
+    span {
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 0;
+        }
+    }
+}
+.time-container {
+    box-sizing: border-box;
+}
+.time-holder {
+    font-size: xx-small;
+    position: absolute;
+    display: flex;
+    flex: auto;
+    overflow: hidden;
+    align-items: flex-start;
+    transform-origin: left bottom;
+    left: 0;
+
+    span {
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 0;
+        }
+    }
+}
+.selectable-text {
+    user-select: text;
+}
+.invisible-space {
+    &:after{
+        content: "";
+        display: inline-block;
+        width: 0;   
+    }
+}

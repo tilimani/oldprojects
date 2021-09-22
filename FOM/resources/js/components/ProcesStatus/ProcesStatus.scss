@@ -1,0 +1,867 @@
+.procesStatusContainer.user.online{
+    &.waiting{
+        li:nth-child(1) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(2) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+        li:nth-child(8){
+            display: none;
+        }
+    }
+    &.available{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(5) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+        li:nth-child(8){
+            display: none;
+        }
+    }
+    &.confirmed{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+        li:nth-child(8){
+            display: none;
+        }
+    }
+    &.payment{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: green;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+        li:nth-child(8){
+            display: none;
+        }
+    }
+    &.payment-cancelled{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: red;
+        }
+        li:nth-child(8){
+            display: none;
+        }
+    }
+    &.payment-check {
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+        li:nth-child(8) span{
+            background-color: #ea960f;
+
+        }
+    }
+    &.deny {
+        
+        li:nth-child(1) {
+            display: none;
+        }
+
+        li:nth-child(2) {
+            display: none;
+        }
+
+        li:nth-child(3) {
+            display: none;
+        }
+
+        li:nth-child(4) {
+            display: none;
+        }
+
+        li:nth-child(5) {
+            display: none;
+        }
+
+        li:nth-child(6) {
+            display: none;
+        }
+
+        li:nth-child(7) {
+            display: none;
+        }
+
+        li:nth-child(8) {
+            display: none;
+
+        }
+    }
+    &.block {
+        
+        li:nth-child(1) {
+            display: none;
+        }
+
+        li:nth-child(2) {
+            display: none;
+        }
+
+        li:nth-child(3) {
+            display: none;
+        }
+
+        li:nth-child(4) {
+            display: none;
+        }
+
+        li:nth-child(5) {
+            display: none;
+        }
+
+        li:nth-child(6) {
+            display: none;
+        }
+
+        li:nth-child(7) {
+            display: none;
+        }
+
+        li:nth-child(8) {
+            display: none;
+
+        }
+    }
+}
+
+.procesStatusContainer.user.offline{
+    &.waiting{
+        li:nth-child(1) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(2) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+    }
+    &.available{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(5) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+    }
+    &.confirmed{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+    }
+    &.payment{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: green;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+    }
+    &.payment-cancelled{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: red;
+        }
+    }
+    &.payment-check{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7){
+            display: none;
+        }
+        li:nth-child(8) span{
+            background-color: #ea960f;
+        }
+    }
+}
+
+.procesStatusContainer.manager.online{
+    &.waiting {
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2) {
+            display: none;
+        }
+        li:nth-child(3) {
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(4):hover{
+            background-color: darken($color: white, $amount: 2.5%);
+            cursor: initial;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(7) {
+            display: none;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.available {
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2) {
+            display: none;
+        }
+        li:nth-child(3) {
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(4):hover{
+            background-color: darken($color: white, $amount: 2.5%);
+            cursor: initial;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(7) {
+            display: none;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.confirmed{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) {
+            display: none;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.payment{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) {
+            display: none;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: green;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.payment-cancelled{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) {
+            display: none;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) {
+            display: none;
+        }
+        li:nth-child(8) span{
+            background-color: red;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.payment-check{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) {
+            display: none;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) {
+            display: none;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) span{
+            background-color: #ea960f;
+        }
+    }
+    &.deny {
+
+        li:nth-child(1) {
+            display: none;
+        }
+
+        li:nth-child(2) {
+            display: none;
+        }
+
+        li:nth-child(3) {
+            display: none;
+        }
+
+        li:nth-child(4) {
+            display: none;
+        }
+
+        li:nth-child(5) {
+            display: none;
+        }
+
+        li:nth-child(6) {
+            display: none;
+        }
+
+        li:nth-child(7) {
+            display: none;
+        }
+
+        li:nth-child(8) {
+            display: none;
+
+        }
+        li:nth-child(9) {
+            display: none;
+
+        }
+    }
+    &.block {
+        
+        li:nth-child(1) {
+            display: none;
+        }
+
+        li:nth-child(2) {
+            display: none;
+        }
+
+        li:nth-child(3) {
+            display: none;
+        }
+
+        li:nth-child(4) {
+            display: none;
+        }
+
+        li:nth-child(5) {
+            display: none;
+        }
+
+        li:nth-child(6) {
+            display: none;
+        }
+
+        li:nth-child(7) {
+            display: none;
+        }
+
+        li:nth-child(8) {
+            display: none;
+        }
+        
+        li:nth-child(9){
+            display:none;
+        }
+    }
+}
+.procesStatusContainer.manager.offline{
+    &.available {
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(3) {
+            display: none;
+        }
+        li:nth-child(4) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(4):hover{
+            background-color: darken($color: white, $amount: 2.5%);
+            cursor: initial;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(7) {
+            display: none;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.visited{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(4):hover{
+            background-color: darken($color: white, $amount: 2.5%);
+            cursor: initial;
+        }
+        li:nth-child(5){
+            display: none;
+        }
+        li:nth-child(6) span{
+            background-color: darkgrey;
+        }
+        li:nth-child(7) {
+            display: none;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.confirmed{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: #ea960f;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.payment{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: green;
+        }
+        li:nth-child(8) {
+            display: none;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.payment-cancelled{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: green;
+        }
+        li:nth-child(8){
+            background-color: red;
+        }
+        li:nth-child(9) {
+            display: none;
+        }
+    }
+    &.payment-check{
+        li:nth-child(1) span{
+            background-color: green;
+        }
+        li:nth-child(2){
+            display: none;
+        }
+        li:nth-child(3) span{
+            background-color: green;
+        }
+        li:nth-child(4){
+            display: none;
+        }
+        li:nth-child(5) span{
+            background-color: green;
+        }
+        li:nth-child(6){
+            display: none;
+        }
+        li:nth-child(7) span{
+            background-color: green;
+        }
+        li:nth-child(8){
+            display: none;
+        }
+        li:nth-child(9) span{
+            background-color: #ea960f;
+        }
+    }
+}
+.procesStatusContainer li{
+    border-bottom: 1px solid lightgray;
+    &:hover{
+        background-color: rgba(0,0,0,0.5);
+        cursor: pointer;
+    }
+}
+.procesStatusContainer li:nth-child(n) span i{
+    color: white;
+    padding: 0.25em;
+}
+.procesStatusContainer li:nth-child(n) span{
+    border-radius: 5em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+}
+.process-deny-button{
+    background-color: white;
+    border-color: white;
+    color: black !important;
+    &:hover{
+        background-color: darken($color: white, $amount: 20%);
+        border-color: white;
+    }
+
+}
+
+.confirmation-modal{
+    .modal-header{
+        .close{
+            font-size: 38px;
+            padding: 1.2rem 1.5rem 0 1.2rem;
+        }
+        border-bottom: none;
+    }
+    .modal-content{
+        border-radius: 25px;
+    }
+
+}
+
+.sticky-0{
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    z-index: 30 !important;
+    top: 0 !important;
+}

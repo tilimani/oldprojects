@@ -1,0 +1,109 @@
+.picture_container-sm {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.picture_container-sm .user_image {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.picture_container-sm ._image {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.picture_container-sm .user_flag {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  z-index: 110;
+  top: 60%;
+  left: 60%;
+  display: block;
+}
+
+.picture_container-md {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.picture_container-md .user_image {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.picture_container-md ._image {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.picture_container-md .user_flag {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  z-index: 110;
+  top: 60%;
+  left: 60%;
+  display: block;
+}
+
+.picture_container-lg {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: relative;
+  margin: inherit;
+}
+
+.picture_container-lg .user_image {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.picture_container-lg ._image {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.picture_container-lg .user_flag {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  z-index: 110;
+  top: 70%;
+  left: 60%;
+  display: block;
+}
+/*# sourceMappingURL=UserPicture.css.map */

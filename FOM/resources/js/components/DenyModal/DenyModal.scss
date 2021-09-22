@@ -1,0 +1,29 @@
+.text-description{
+    font-size: 12px;
+}
+
+.react-datepicker-wrapper{
+    width: 50%;
+}
+.react-datepicker__day--keyboard-selected{
+   background-color: #ea960f;
+   &:hover{
+       background-color: #c57e0b;
+   }
+}
+.process-deny-button {
+    background-color: white;
+    border-color: white;
+    color: black !important;
+
+    &:hover {
+        background-color: darken($color: white, $amount: 20%);
+        border-color: white;
+    }
+
+}
+
+.DateRangePicker_picker.DateRangePicker_picker_1.DateRangePicker_picker__directionLeft.DateRangePicker_picker__directionLeft_2{
+    top: -100px !important;
+    left: -19px !important;
+}

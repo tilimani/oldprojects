@@ -1,0 +1,533 @@
+.month-unselected {
+  font-size: 1.3rem;
+  color: lightgray;
+}
+
+.month-selected {
+  font-size: 1.5rem;
+  color: #ff9b00;
+}
+
+.month-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+}
+
+.month-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.month-slider-wrapper .month {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  border: none;
+  min-width: 200px;
+  opacity: 0.7;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+  -webkit-transition: opacity 300ms linear, color 300ms linear, -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 300ms linear, color 300ms linear, -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 300ms linear, color 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 300ms linear, color 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.month-slider-wrapper .month::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ff9b00;
+}
+
+.month-slider.active-slide-0 #month-0 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-0 #month-0::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-1 #month-1 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-1 #month-1::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-2 #month-2 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-2 #month-2::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-3 #month-3 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-3 #month-3::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-4 #month-4 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-4 #month-4::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-5 #month-5 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-5 #month-5::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-6 #month-6 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-6 #month-6::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-7 #month-7 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-7 #month-7::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-8 #month-8 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-8 #month-8::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-9 #month-9 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-9 #month-9::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-10 #month-10 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-10 #month-10::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-11 #month-11 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-11 #month-11::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-12 #month-12 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-12 #month-12::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-13 #month-13 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-13 #month-13::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-14 #month-14 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-14 #month-14::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-15 #month-15 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-15 #month-15::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-16 #month-16 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-16 #month-16::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-17 #month-17 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-17 #month-17::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-18 #month-18 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-18 #month-18::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-19 #month-19 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-19 #month-19::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-20 #month-20 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-20 #month-20::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-21 #month-21 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-21 #month-21::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-22 #month-22 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-22 #month-22::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-23 #month-23 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-23 #month-23::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-24 #month-24 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-24 #month-24::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-25 #month-25 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-25 #month-25::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-26 #month-26 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-26 #month-26::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-27 #month-27 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-27 #month-27::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-28 #month-28 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-28 #month-28::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.month-slider.active-slide-29 #month-29 {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9b00;
+  position: relative;
+}
+
+.month-slider.active-slide-29 #month-29::after {
+  -webkit-transition: width 300ms 200ms ease-out;
+  transition: width 300ms 200ms ease-out;
+  width: 100%;
+}
+
+.carousel-months {
+  height: 100%;
+  position: relative;
+}
+
+.carousel-months:before, .carousel-months:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 120%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(15%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 15%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.carousel-months:after {
+  left: auto;
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(15%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, white 15%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel-months .btn-prev,
+.carousel-months .btn-next {
+  height: inherit;
+  border: none;
+  font-size: 1.2rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 800;
+  color: lightgray;
+}
+
+.carousel-months .btn-prev {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.carousel-months .btn-next {
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.month-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=TransactionHistory.css.map */

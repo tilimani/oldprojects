@@ -1,0 +1,747 @@
+.notification-container {
+  width: 100%;
+  border-right: 1px solid #ededed;
+  max-height: 72vh;
+  position: relative;
+}
+
+.notification-container .container {
+  padding: 0.5em;
+  position: relative;
+  height: auto;
+}
+
+.notification-badge {
+  margin: 0 1.5rem;
+  padding: 0.75rem 0.95rem;
+  color: #fff;
+}
+
+.notification-badge.unread {
+  color: #ea960f !important;
+  background: #fff3e0 !important;
+}
+
+.notification-text {
+  color: lightgrey;
+}
+
+.notification-text.denied {
+  color: #000 !important;
+}
+
+.custom-toggle {
+  position: relative;
+  width: 100%;
+}
+
+.custom-toggle-text {
+  text-align: center;
+}
+
+.custom-toggle:after {
+  content: "";
+  background: lightgray;
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-toggle:after {
+    left: 10%;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .custom-toggle:after {
+    left: 2%;
+    width: 96%;
+  }
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.manager-header {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.manager-header .name {
+  display: inline-flexbox;
+  position: absolute;
+}
+
+.manager-header .name p {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search-container {
+  text-align: center;
+  margin: 15px;
+  width: 100%;
+}
+
+.search-container .search-input {
+  border-radius: 13px;
+  border: 0.51px solid #7b858a;
+  padding: 3px 8px;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-appearance: none;
+  outline: 0px !important;
+}
+
+.Notification {
+  width: 100%;
+  overflow-y: scroll;
+  max-height: -webkit-fill-available;
+  position: relative;
+}
+
+.notification-bubble {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: url("../images/notifications_bubble.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.notification-bubble .badge {
+  position: absolute;
+  bottom: 0;
+  right: 0.34rem;
+  border-radius: 0.65rem;
+}
+
+.bottom-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bottom-panel-button {
+  width: 33%;
+  height: 60px;
+  border: 1px solid #dadada;
+}
+
+.bottom-panel-button .my-profile {
+  width: 50%;
+  margin: 0 auto;
+  height: 60px;
+  background-image: url("../images/profile-off.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bottom-panel-button .my-bookings {
+  width: 50%;
+  margin: 0 auto;
+  height: 60px;
+  background-image: url("../images/mybookings-on.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bottom-panel-button .my-calendar {
+  width: 50%;
+  margin: 0 auto;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  min-width: 100%;
+  border-bottom-right-radius: 40px 40px;
+  border-bottom-left-radius: 40px 40px;
+  border-top: none;
+  padding-top: 0.55em;
+  z-index: 1;
+}
+
+.dropdown-content div {
+  visibility: hidden;
+}
+
+.dropdown-content.open {
+  max-height: 100%;
+  -webkit-animation: dpo .25s ease-in;
+          animation: dpo .25s ease-in;
+  -webkit-animation-delay: calc(0.1 * n) s;
+          animation-delay: calc(0.1 * n) s;
+  -webkit-box-shadow: 0px 20px 16px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 16px 1px rgba(0, 0, 0, 0.2);
+  z-index: 300;
+  position: absolute;
+  top: 10%;
+}
+
+.dropdown-content.open div {
+  visibility: visible;
+  -webkit-animation: pulse 2s ease-in;
+          animation: pulse 2s ease-in;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.dropdown-content.closed {
+  max-height: 0;
+  -webkit-animation: dpc 2s ease-out;
+          animation: dpc 2s ease-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.dropdown-content.closed:nth-child(n) {
+  visibility: hidden;
+  -webkit-animation: pulseOut .1s  ease-out;
+          animation: pulseOut .1s  ease-out;
+}
+
+@-webkit-keyframes dpo {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 100%;
+  }
+}
+
+@keyframes dpo {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 100%;
+  }
+}
+
+@-webkit-keyframes dpc {
+  0% {
+    max-height: 100%;
+  }
+  100% {
+    max-height: 0;
+  }
+}
+
+@keyframes dpc {
+  0% {
+    max-height: 100%;
+  }
+  100% {
+    max-height: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@-webkit-keyframes pulseOut {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes pulseOut {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.dropdown-content div {
+  position: relative;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #e7e9ea;
+}
+
+.dropdown-content div:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content div:last-child:hover {
+  background-color: #ddd;
+  border-bottom-right-radius: 40px 40px;
+  border-bottom-left-radius: 40px 40px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover ~ .dropbtn {
+  color: #f2ac3a;
+}
+
+.dropdown:hover ~ .notification-bubble ~ .badge {
+  background-color: #f2ac3a;
+}
+
+.notification_app {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 1301px) {
+  .notification_app {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .notification_app {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .notification_app.inactive {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  .notification_app.active {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .notification_app.inactive {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  .notification_app.active {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+.notification_app ._notification_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.notification_app ._notification_container ._notification_header {
+  padding: 10px 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 59px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1000;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.notification_app ._notification_container ._notification_header ._image_container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.notification_app ._notification_container ._notification_header ._image_container ._image_holder {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #dfe5e7;
+  position: relative;
+  overflow: hidden;
+}
+
+.notification_app ._notification_container ._notification_header ._image_container ._image_holder ._image {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.notification_app ._notification_container ._notification_header ._icons_container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.notification_app ._notification_container ._notification_header ._icons_container:last-of-type {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.notification_app ._notification_container ._notification_header ._icons_container ._icons_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification_app ._notification_container ._notification_header ._icons_container ._icons_holder span ._item:first-of-type {
+  margin-left: 0;
+  border-radius: 50%;
+  padding: 0 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  position: relative;
+  top: -1px;
+}
+
+.notification_app ._notification_container ._notification_header ._icons_container:hover ._icons_holder span ._item {
+  color: #ea960f;
+}
+
+.notification_app ._notification_container ._notification_search {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  background-color: white;
+}
+
+.notification_app ._notification_container ._notification_search ._search_holder {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.notification_app ._notification_container ._notification_search ._search_holder ._search_container {
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 49px;
+  position: relative;
+  z-index: 100;
+}
+
+.notification_app ._notification_container ._notification_search ._search_holder ._search_container ._label_container {
+  left: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  right: 14px;
+  background-color: #fff;
+  border-radius: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  position: absolute;
+  top: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.notification_app ._notification_container ._notification_search ._search_holder ._search_container ._label_container ._input_custom {
+  border: none;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  min-height: 20px;
+  outline: none;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  width: 100%;
+  z-index: 1;
+}
+
+.notification_app ._notification_container ._notification_search ._search_holder:after {
+  left: 0;
+  background-color: grey;
+  bottom: -1px;
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.notification_app ._notification_container ._notification_holder {
+  background-color: #fff;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow-y: auto;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item {
+  z-index: 268;
+  height: 72px;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 72px;
+  pointer-events: all;
+  position: relative;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content:hover {
+  background-color: #fdf2e1;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._image_container {
+  padding: 0 15px 0 13px;
+  margin-top: -1px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._image_container ._image_holder {
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._image_container ._image_holder ._image {
+  border-radius: 50%;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container {
+  padding-right: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  min-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_tittle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_tittle ._main_content {
+  text-align: left;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  overflow: hidden;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_tittle ._main_content span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_tittle ._secondary_content {
+  margin-top: 3px;
+  margin-left: 6px;
+  line-height: 14px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  font-size: 15px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_tittle ._secondary_content span {
+  text-transform: capitalize;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_content {
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  line-height: 20px;
+  min-height: 20px;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_content ._content {
+  text-align: left;
+  background-color: transparent;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_content ._content.user_name {
+  font-size: 13.5px !important;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_content ._content.vico_name {
+  color: #ea960f;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_content ._content ._text_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_content ._content ._text_2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.notification_app ._notification_container ._notification_holder ._scroll_area ._item ._content ._text_container ._main_content ._second_content {
+  margin-left: 6px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  font-size: 12px;
+  max-width: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=Notification.css.map */

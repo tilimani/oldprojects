@@ -1,0 +1,180 @@
+.profile_app{
+    transform-origin: left top;
+    overflow: overlay;
+    position: relative;
+    border-left: 1px solid rgba(0.3,0.3,0.3,0.3);    
+    flex: 0;
+
+    .fas.fa-arrow-left{
+        -webkit-text-stroke: 4px white;
+        color: #a5a5a5;
+        position: absolute;
+    }
+    @media screen and (max-width: 1280px) and (min-width:426px){
+        flex: 30%;        
+    }
+    @media screen and (max-width: 425px){
+        &.inactive{
+            flex: 0;
+        }
+        &.active{
+            flex: 100%;
+            padding: 0 20px;
+        }
+    }
+    @media screen and (min-width: 1281px){
+        flex: 30%;
+    }
+    
+    .light-text{
+        color: #a5a5a5 !important;
+    }
+    .profile_info{
+        margin: 0 auto;
+        text-align: center;        
+        .user_name{
+            font-size: 20px;
+            font-family: NunitoBold;
+            color: #a5a5a5;
+            user-select: text;
+        }        
+    }
+    .profile_reviews{
+        .verifications{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            .verification_item{
+                display: inline-flex;
+                margin-bottom: 5px;
+                .button_image{
+                    padding: 0 15px 0 0;
+                    margin-top: -1px;
+                    cursor: pointer;
+                    flex: none;
+                    ._content{
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        position: relative;
+                        overflow: hidden;
+        
+                        &_status{
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                            position: relative;
+                            overflow: hidden;
+        
+                            ._image_status {
+                                border-radius: 50%;
+                                display: block;
+                                position: relative;                        
+                                overflow: hidden;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: rgba(255, 255, 255, 0.9);
+                                
+                                &.uncheck{
+                                    background-color: darkgrey;
+                                    .fas.fa-check{
+                                        -webkit-text-stroke: 2px darkgrey;
+                                    }
+                                }                        
+                                &.check{
+                                    background-color: #73c950;
+                                    .fas.fa-check{
+                                        -webkit-text-stroke: 2px #73c950;
+                                    }
+                                }                        
+                            }
+                        }
+            
+                        ._image{
+                            border-radius: 50%;
+                            display: block;
+                            position: relative;
+                            z-index: 100;
+                            overflow: hidden;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .house_name{
+        font-family: NunitoBold;
+        text-align: center;
+        color:#6f6f6f;
+        user-select: text;
+    }
+    .user_dates{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        .start_date{
+            .week_day{
+                font-family: NunitoBold;
+                color: #888888;
+            }
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            line-height: 20px;
+            user-select: text;
+        }
+        .dates_arrow{
+            color: #0c981b;
+            flex-direction: column;
+            justify-self: center;
+        }
+        .end_date{
+            .week_day{
+                font-family: NunitoBold;
+                color: #888888;
+            }
+            display: flex;
+            flex-direction: column;  
+            line-height: 20px;  
+            user-select: text;       
+        }
+        .fas.fa-chevron-right{
+            -webkit-text-stroke: 5px white;
+        }
+    }
+}
+._content_user{
+    text-align: left;
+    margin-top: -1px;
+    line-height: normal;
+    display: block;
+    flex: none;
+
+    ._text{
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inherit;
+        flex-grow: 1;
+        margin: 8px auto;
+
+        span{
+            overflow: hidden;
+            position: relative;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            user-select: text;
+        }
+    }
+}

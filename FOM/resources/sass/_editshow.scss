@@ -1,0 +1,346 @@
+/* Booking show chat input style*/
+table{
+  box-sizing: border-box;
+}
+.denied{
+  filter: brightness(3);
+
+  &.edit-item-selected{
+    filter: brightness(1);
+  }
+}
+.houses-editnew-hover{
+  
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+    color: #ea960f;
+    border: 1px #ea960f solid;
+  }
+}
+.thumb-roomie{
+  grid-area: thumb;
+  position: relative;
+  
+  img{
+    max-width: 100px;
+  }
+  small img{
+    bottom: 0;
+  }
+  span{
+    position: absolute;
+    top:12px;
+    right: -73px;
+    font-size: 1rem;
+  }
+}
+.text-roomie{
+  @extend .flex-center;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  grid-area: textRoomie;
+
+  p{
+    font-size: 1.1rem;
+  }
+}
+.button-roommie{
+  grid-area: buttonRoomie;
+}
+.calendar-roomie{
+  grid-area: calendar;
+}
+.request-roomie{
+  @extend .flex-center;
+  align-items: baseline !important;
+  grid-area: request;
+}
+.title-roomie{
+  grid-area: title;
+}
+.element-roomie{
+  grid-area: element;
+}
+.edit-add-roomie-modal{
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 6px;
+}
+.houses-roomies{
+  &-int{
+    padding-left: 16px !important;
+    display: grid;
+    grid-template-columns: auto 0fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+      'thumb textRoomie textRoomie request'
+      'thumb calendar calendar request'
+  }
+  &-ext{
+    padding-left: 16px !important;
+    display: grid;
+    grid-template-columns: auto 0fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+      'thumb . textRoomie textRoomie'
+      'thumb calendar calendar request'
+  }
+  &-add{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: '. request .'
+  }
+}
+
+.extern-roomie{
+  &-add-1{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 'title element . .';
+  }
+  &-add-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'title . . .'
+    'element element element element';
+  }
+  &-add-3{
+    display: grid;
+    grid-template-columns: auto 10px auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'calendar . . .'
+    'title . element .';
+  }
+  &-add-4{
+    @extend .extern-roomie-add-2;
+  }
+  &-add-5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'title title title title'
+    'calendar calendar element element';
+  }
+  &-add-6{
+    @extend .extern-roomie-add-5;
+  }
+}
+.field{
+  position: relative;
+  input{
+    width: 100%;
+    border:none;
+    outline: 0;
+    padding: .2em .5em;
+  }
+  &:before{
+    border: solid 2px #ccc;
+    border-top: none;
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: .4em;
+  }
+  &.focus:before{
+   border-color: #222;
+  }
+}
+/* Custom border colors*/
+.border-left{
+  &-red{
+    border-color: #FF0000 !important;
+    border-width: 0.50em !important;
+  }
+  &-green{
+    border-color: #06FF00 !important;
+    border-width: 0.50em !important;
+  }
+  &-grey{
+    border-color: #aeb7a4 !important;
+    border-width: 0.50em !important;
+  }
+}
+/* acordion collapse table*/
+.hiddenRow {
+    padding: 0 !important;
+}
+.edit-item-selected{
+  color: white !important;
+  background-color: #ea960f;
+}
+.edit-item{
+  cursor: pointer;
+}
+.fileContainer {
+  overflow: hidden;
+  position: relative;
+  color: #ea960f;
+  font-size: 15px;
+  border: 4px solid;
+  border-radius: 10px;
+  padding: 3px;
+  cursor: n-resize;
+  float: right;
+}
+
+.fileContainer [type=file] {
+  cursor: inherit;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.vico-image-func {
+  padding: 10px 20px 0 15px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 392px) {
+
+  .vico-image-func {
+    padding: 10px 20px 0 15px;
+  }
+
+}
+.edit-item-selected{
+  .arrow-container{
+    transform: rotate(-90deg);
+  }
+}
+.arrow-container-selected{
+  transform: rotate(-90deg) !important;
+}
+@media (max-width: 425px){
+  .border-left-green.edit-item-selected,
+  .border-left-grey.edit-item-selected,
+  .border-left-red.edit-item-selected {
+
+    & > .tableRoomNumber::before{
+      content: '';
+      position: absolute;
+      left: calc(100% / 5);
+      bottom: -1px;
+      z-index: 2;
+      width: 0;
+      height: 0;
+      border-right: 13px solid transparent;
+      border-top: 13px solid transparent;
+      border-left: 13px solid transparent;
+      border-bottom: 13px solid white;
+    }
+  }
+
+  .homemate-table thead tr th:nth-of-type(2){
+    width: 40%;
+  }  
+
+  #houseDescription{
+    width: 90%;
+    margin-left: 7px;
+  }
+
+  .thumb-roomie{
+    img{
+      max-width: 80px !important;
+    }
+
+    small img{
+      bottom: 0;
+    }
+
+    span{
+      font-size: 0.8rem;
+      right: -58px;
+    }
+  }
+  .text-roomie{
+    justify-content: end !important;
+    align-items: center !important;
+    p{
+      margin: 0;
+    }
+  }
+  .houses-roomies{
+     
+    &-int{
+      grid-template-rows: 40px 40px;
+      grid-template-areas: 
+      'thumb textRoomie textRoomie textRoomie'
+      'thumb calendar calendar request';
+    }
+    &-ext{
+      grid-template-rows: 40px 40px;
+      // grid-template-areas: 
+      // 'thumb textRoomie textRoomie textRoomie'
+      // 'thumb calendar calendar request';
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .vico-image-func {
+    padding: 10px 20px 0 65px;
+  }
+
+}
+.arrow-container{
+  transition:all 0.5s;
+}
+.item-blocked{
+  opacity: 0.6;
+  filter: alpha(opacity=6);
+}
+
+/* custom edit button */
+.btn-float-right{
+  float: right;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.btn-float-left{
+  float: left;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.txtHouseDesc{
+  cursor: pointer;
+}
+
+.txtNghbDesc{
+  cursor: pointer;
+}
+
+.editDevice{
+  cursor: pointer;
+}
+.vico-show-equipos{
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 8%;
+}
+.add-selected{
+  // color: #ea960f;
+  background: #5cb85c;
+    color: white;
+}

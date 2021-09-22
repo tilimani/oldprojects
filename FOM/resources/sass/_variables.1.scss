@@ -1,0 +1,65 @@
+
+// Body
+$body-bg: #fff;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border-color: $laravel-border-color;
+
+$card-border-color: $laravel-border-color;
+
+// Brands
+$primary: #ea960f;
+$info: #8eb4cb;
+$success: #2ab27b;
+// $warning: #cbb956;
+// $danger: #ea960f;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: .875rem; // 14px
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Inputs
+$input-border-color: lighten($text-color, 40%);
+$input-placeholder-color: lighten($text-color, 30%);
+
+//margin create
+
+$margin-top: 5%;
+
+//breakpoints
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l:  425px;
+$tablet: 768px;
+$laptop: 1024px;
+
+/* === Equipment === */
+
+.equipment-list{
+  padding-left: 0;
+  text-align: center;
+}
+
+.equipment-list li{
+  width: 7.6rem;
+  height: 7.6rem;
+  /*background-color: #63b22f;*/
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2rem .6rem;
+}
+
+.equipment-list p{
+  margin: 1.2rem 0 0 0;
+}
+
+.equipment-list li>span{
+  /*color: #fff;*/
+  color: #3A3A3A;
+  font-size: 6.7rem;
+  display: inline-block;
+  margin-top: .2rem;
+}

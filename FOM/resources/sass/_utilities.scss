@@ -1,0 +1,24 @@
+@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false, $units: false) {
+    
+    @if $units {
+        @if $size { font-size: $size+unquote($units) !important; }
+        @if $colour { color: $colour; }
+        @if $weight { font-weight: $weight+unquote($units); }
+        @if $lh { line-height: $lh+unquote($units); }
+    }
+    @else{
+        @if $size { font-size: $size; }
+        @if $colour { color: $colour; }
+        @if $weight { font-weight: $weight; }
+        @if $lh { line-height: $lh; }
+    }
+    
+}
+
+@mixin rotate-deg($deg: false){
+    @if $deg{ transform: rotate($deg+unquote('deg'));}
+}
+
+@mixin width($width: false){
+    @if $width{ width: $width+unquote('%') !important; }
+}

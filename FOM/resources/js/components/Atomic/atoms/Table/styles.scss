@@ -1,0 +1,38 @@
+._table {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 3em 0;
+    padding: 0;
+
+    &._table{
+        &_1 > ._table_cell {
+            width: 100%;
+        }
+        &_2 > ._table_cell{
+            width: 50%;
+        }
+        &_3 > ._table_cell{
+            width: 33.33%;
+        }
+        &_4 > ._table_cell{
+            width: 25%;
+        }
+        &_5 > ._table_cell{
+            width: 20%;
+        }
+        &_6 > ._table_cell{
+            width: 16.6%;
+        }
+    }
+}
+._table_cell{
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none;
+    border: solid 1px white;
+    color: #474747;
+}
+

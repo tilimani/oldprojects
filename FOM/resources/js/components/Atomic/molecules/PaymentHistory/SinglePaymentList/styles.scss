@@ -1,0 +1,32 @@
+._responsive_block {
+    display: flex;
+    box-sizing: border-box;
+    height: 10em;
+    width: 85%;
+    align-items: center;
+    border-top: 1px solid rgba(0.3,0.3,0.3,0.3);
+    background-color: white;
+    user-select: none;
+
+    &:after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        bottom: -1px;
+    }
+    ._container {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row;
+        min-width: 100%;
+        max-width: fit-content;
+
+        ._content_text {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            padding: 15px 15px;
+        }
+    }
+}

@@ -1,0 +1,336 @@
+.app-welcome-container {
+  padding: 3rem 1rem;
+  padding-top: 0;
+  text-align: justify;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app-welcome-container .app-welcome-wrapper {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  row-gap: 25px;
+}
+
+.app-welcome-container .app-welcome-wrapper .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section-welcome {
+  height: calc(60vh - 6rem);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-welcome .welcome-title {
+  text-align: center;
+  font-family: NunitoBold, sans-serif;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.section-welcome .welcome-title > h1 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .section-welcome .welcome-title > h1 {
+    font-size: calc( 20px + 12 * ((100vw - 320px) / 1046));
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-welcome .welcome-title > h1 {
+    font-size: 32px;
+  }
+}
+
+.section-welcome .welcome-text {
+  line-height: 34px;
+  font-style: italic;
+  text-align: center;
+  color: #4d4d4d;
+  font-family: NunitoBold;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #f5cb8bdb;
+  -webkit-box-shadow: -2px 3px 40px -16px rgba(0, 0, 0, 0.3);
+          box-shadow: -2px 3px 40px -16px rgba(0, 0, 0, 0.3);
+}
+
+.section-welcome .welcome-text {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .section-welcome .welcome-text {
+    font-size: calc( 14px + 6 * ((100vw - 320px) / 1046));
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-welcome .welcome-text {
+    font-size: 20px;
+  }
+}
+
+.section-requirements {
+  margin-top: 1rem;
+}
+
+.section-requirements .requirements-title {
+  color: #4d4d4d;
+  font-family: NunitoBold, sans-serif;
+  text-align: center;
+}
+
+.section-success-cases {
+  margin-top: 1.5rem;
+}
+
+.section-success-cases .success-cases-title {
+  text-align: center;
+  color: #4d4d4d;
+  font-family: NunitoBold, sans-serif;
+}
+
+.section-success-cases .success-cases-title > h2 {
+  font-size: 1.5rem;
+}
+
+.requirements-wrapper .requirements-house, .requirements-wrapper .requirements-location {
+  background-color: #bddbc552;
+  border-radius: 10px;
+  -webkit-box-shadow: -9px 9px 11px -14px rgba(0, 0, 0, 0.3);
+          box-shadow: -9px 9px 11px -14px rgba(0, 0, 0, 0.3);
+  padding: 0.3rem 1rem;
+}
+
+.requirements-wrapper .requirements-house .house-title,
+.requirements-wrapper .requirements-house .location-title, .requirements-wrapper .requirements-location .house-title,
+.requirements-wrapper .requirements-location .location-title {
+  margin: 1rem 0;
+  color: #737159;
+  font-family: NunitoBold, sans-serif;
+  text-align: center;
+}
+
+.requirements-wrapper .requirements-house .house-title > h3,
+.requirements-wrapper .requirements-house .location-title > h3, .requirements-wrapper .requirements-location .house-title > h3,
+.requirements-wrapper .requirements-location .location-title > h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.requirements-wrapper .requirements-house .house-img,
+.requirements-wrapper .requirements-house .location-img, .requirements-wrapper .requirements-location .house-img,
+.requirements-wrapper .requirements-location .location-img {
+  padding: 2rem;
+}
+
+.requirements-wrapper .requirements-house .house-img > img,
+.requirements-wrapper .requirements-house .location-img > img, .requirements-wrapper .requirements-location .house-img > img,
+.requirements-wrapper .requirements-location .location-img > img {
+  width: 100%;
+}
+
+.requirements-wrapper .requirements-location {
+  margin-top: 1.5rem;
+}
+
+.button-section-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.style-value {
+  font-size: 1.2rem;
+  color: #ff9b00;
+}
+
+.style-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.style-description {
+  font-size: 0.8rem;
+}
+
+.success-cases-wrapper {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.success-cases-wrapper .room-case-container,
+.success-cases-wrapper .contract-case-container,
+.success-cases-wrapper .time-case-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success-cases-wrapper .room-case-img,
+.success-cases-wrapper .contract-case-img,
+.success-cases-wrapper .time-case-img {
+  padding: 0 1rem;
+}
+
+.success-cases-wrapper .time-case-img {
+  padding-right: 0.3rem;
+  padding-left: 1.2rem;
+}
+
+@media screen and (min-width: 625px) {
+  .section-requirements .requirements-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0 3rem;
+    margin-top: 1.5rem;
+  }
+  .section-requirements .requirements-wrapper .requirements-location {
+    margin: 0;
+  }
+  .section-success-cases {
+    margin-top: 0;
+  }
+  .button-section-container {
+    margin: 1.5rem 0;
+  }
+  .success-cases-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+    padding: 0 3rem;
+  }
+  .success-cases-wrapper .room-case-container,
+  .success-cases-wrapper .contract-case-container,
+  .success-cases-wrapper .time-case-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 130px auto;
+        grid-template-rows: 130px auto;
+  }
+  .success-cases-wrapper .room-case-container .room-case-img,
+  .success-cases-wrapper .room-case-container .contract-case-img,
+  .success-cases-wrapper .room-case-container .time-case-img,
+  .success-cases-wrapper .contract-case-container .room-case-img,
+  .success-cases-wrapper .contract-case-container .contract-case-img,
+  .success-cases-wrapper .contract-case-container .time-case-img,
+  .success-cases-wrapper .time-case-container .room-case-img,
+  .success-cases-wrapper .time-case-container .contract-case-img,
+  .success-cases-wrapper .time-case-container .time-case-img {
+    padding: 1rem;
+    height: 130px;
+  }
+  .success-cases-wrapper .room-case-container .room-case-img img,
+  .success-cases-wrapper .room-case-container .room-case-img img,
+  .success-cases-wrapper .room-case-container .room-case-img img,
+  .success-cases-wrapper .room-case-container .contract-case-img img,
+  .success-cases-wrapper .room-case-container .contract-case-img img,
+  .success-cases-wrapper .room-case-container .contract-case-img img,
+  .success-cases-wrapper .room-case-container .time-case-img img,
+  .success-cases-wrapper .room-case-container .time-case-img img,
+  .success-cases-wrapper .room-case-container .time-case-img img,
+  .success-cases-wrapper .contract-case-container .room-case-img img,
+  .success-cases-wrapper .contract-case-container .room-case-img img,
+  .success-cases-wrapper .contract-case-container .room-case-img img,
+  .success-cases-wrapper .contract-case-container .contract-case-img img,
+  .success-cases-wrapper .contract-case-container .contract-case-img img,
+  .success-cases-wrapper .contract-case-container .contract-case-img img,
+  .success-cases-wrapper .contract-case-container .time-case-img img,
+  .success-cases-wrapper .contract-case-container .time-case-img img,
+  .success-cases-wrapper .contract-case-container .time-case-img img,
+  .success-cases-wrapper .time-case-container .room-case-img img,
+  .success-cases-wrapper .time-case-container .room-case-img img,
+  .success-cases-wrapper .time-case-container .room-case-img img,
+  .success-cases-wrapper .time-case-container .contract-case-img img,
+  .success-cases-wrapper .time-case-container .contract-case-img img,
+  .success-cases-wrapper .time-case-container .contract-case-img img,
+  .success-cases-wrapper .time-case-container .time-case-img img,
+  .success-cases-wrapper .time-case-container .time-case-img img,
+  .success-cases-wrapper .time-case-container .time-case-img img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-welcome .welcome-text {
+    margin: 0 7rem;
+  }
+  .section-requirements .requirements-wrapper .requirements-house,
+  .section-requirements .requirements-wrapper .requirements-location {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "title title" "image description";
+    -ms-grid-rows: min-content max-content;
+        grid-template-rows: -webkit-min-content -webkit-max-content;
+        grid-template-rows: min-content max-content;
+    -ms-grid-columns: minmax(200px, 40%) 1fr;
+        grid-template-columns: minmax(200px, 40%) 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-requirements .requirements-wrapper .requirements-house .house-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  .section-requirements .requirements-wrapper .requirements-house .house-img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .section-requirements .requirements-wrapper .requirements-house .house-description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: description;
+  }
+  .section-requirements .requirements-wrapper .requirements-location .location-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  .section-requirements .requirements-wrapper .requirements-location .location-img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .section-requirements .requirements-wrapper .requirements-location .location-description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: description;
+  }
+}
+/*# sourceMappingURL=welcomeToVico.css.map */

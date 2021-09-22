@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+  .box-container {
+    padding: 0%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .box-container {
+    padding: 7% 10%;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .box-container {
+    padding: 10% 15%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

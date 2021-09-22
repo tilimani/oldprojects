@@ -1,0 +1,193 @@
+/* generic classes */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+}
+
+
+.section-title {
+  font-size: 380%;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+/* title */
+
+.main-title-container {
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);
+
+}
+
+.main-title {
+  font-size: 600%;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title-octicon  {
+  font-size: 100px;
+  color: black;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.title-icons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 575px;
+  color: white;
+  margin: auto;
+}
+
+/*refactor this */
+
+.bounce:hover {
+  animation-name: bounce;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.title-icon-name {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.vertical-title {
+  vertical-align: middle;
+}
+
+/* about me */
+
+#about {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.about-me-section {
+  background: #696969;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.picture-of-me {
+  height: 350px;
+  width: 350px;
+  background: url(/assets/img/picture-of-me.jpg) no-repeat center center;
+  background-size: contain;
+  vertical-align: middle;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  bottom: 15px;
+}
+
+.paragraph {
+  color: white;
+  font-weight: bold;
+
+}
+
+/* skills wow this really needs looking at*/
+
+.skills-title {
+  color: black;
+  -webkit-margin-after: 0px;
+}
+
+.bottom-skills-container {
+  margin-bottom: 60px;
+}
+
+ .vertical-item {
+   position: relative;
+   top:50%;
+   transform: translateY(-50%);
+}
+
+.skills-octicon {
+  color: black;
+  font-size: 75px;
+  border-top: 30px;
+  margin-bottom: 35px;
+  padding-bottom: -30px;
+}
+
+.padding-left-and-right {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.skills-octicon {
+margin-top: 10px;
+}
+
+.skills-subheading {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+/* projects */
+
+.projects-section {
+  height: 600px;
+  background: url(/assets/img/giphy.gif) repeat;
+}
+
+/* contact me */
+
+.contact-section {
+  height: 300px;
+  background-color: black;
+  font-size: 10px;
+}
+
+.contact-icon {
+  padding-bottom: 30px;
+  max-width: 575px;
+  color: white;
+  margin: auto;
+  font-size: 100px;
+}
+
+/*
+VARIABLES IN CSS
+
+DECLARE:
+  - IN BODY TAG PUT "--VARIABLE: VALUE;"
+
+USE:
+  - IN ELEMENT PUT "var(--variable);"
+
+ */
+.coming-soon{
+    font-size: 50px;
+    color: yellow;
+    font-weight: bold;
+    position: relative;
+    top:30%;
+    transform: translateY(-50%);
+}
+
+.projects {
+  padding-top: 20px;
+  padding-left: 20px;
+  vertical-align: middle;
+}

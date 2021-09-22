@@ -1,0 +1,85 @@
+ .checkmark {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+ }
+
+  .small-grey-text {
+    font-size: 13px;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+  }
+
+  .room-image {
+    max-width: 70%;
+    border-radius: 15px;
+    margin: 15px 0 15px 0;
+    min-width: 200px;
+  }
+
+  .small-title {
+    margin-bottom: 0;
+  }
+
+  .prices {
+    margin-bottom: 37px;
+  }
+
+  .close-button {
+    height: 120px;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+  }
+
+  .checkboxes {
+    padding-left: 98px;
+  }
+
+  #button-close {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Mobile Specific */
+  @media (max-width: 600px) {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 991px){
+    #finnicky-title-1 {
+      margin-top: 15px;
+    }
+
+    #finnicky-title-2 {
+      margin-top: 30px;
+    }
+  }
+
+  /* Desktop Specific (lg-992px) */
+  @media (min-width: 992px) {
+    #finnicky-title-2 {
+      margin-top: 32px;
+    }
+
+    #last-buttons {
+      margin-right: 50px;
+    }
+
+    textarea {
+      margin-left: 15px;
+    }
+  } 
+
+.small-room-image {
+  border-radius: 15px;
+  width: 168px;
+  height: 111px;
+  margin-right: 80px;
+}
+
+#footer {
+  border-top: 1px #e9ecef solid;
+}

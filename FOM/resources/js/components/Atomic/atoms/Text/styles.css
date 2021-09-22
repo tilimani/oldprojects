@@ -1,0 +1,66 @@
+.text {
+  text-align: left;
+  font-weight: 100;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.text.alignleft {
+  float: left;
+}
+
+.text.alignright {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 14.5px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .text {
+    font-size: 16.5px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.text.paragraph {
+  color: #808080;
+}
+
+.text.subheading {
+  font-weight: 400;
+  color: #767676;
+}
+
+.text.heading {
+  font-weight: bold;
+}
+
+.text.gutterBottom {
+  margin-bottom: 0.5em;
+}
+
+.text.green {
+  color: #22A43E;
+}
+
+.text.red {
+  color: #EC5353;
+}
+
+.text.yellow {
+  color: #EF8E01;
+}
+/*# sourceMappingURL=styles.css.map */

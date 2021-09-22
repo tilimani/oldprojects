@@ -1,0 +1,33 @@
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 1;
+}
+
+.hr-text:before {
+  content: '';
+  background: #d3d2d1;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 80%;
+  height: 2px;
+  margin-left: 10%;
+}
+
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: #d3d2d1;
+  background-color: #fff;
+}
+/*# sourceMappingURL=BookingStatusMessage.css.map */

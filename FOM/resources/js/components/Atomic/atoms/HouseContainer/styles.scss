@@ -1,0 +1,98 @@
+@import "../../../../../../node_modules/rfs/scss";
+.house-container {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+
+    img {
+        border-radius: 25px;
+        position: relative;
+        // min-width: 100%;
+        // max-width: 100%;
+        // max-height: 263px;
+        // min-height: 263px;
+        height: 66.66%;
+        width: 100%;
+        // object-fit: contain;
+    }
+    .house{
+        position: absolute;
+        color: white;
+        bottom: 0;
+        right: 0;
+        background: #ffa50069;
+        width: 100%;
+        height: 35%;
+
+        &.overlay{
+            border-radius: 0 0 25px 25px;
+            
+            @media only screen and (min-width: 320px) {
+                padding: 0.1em 0.75em;
+            }
+            @media only screen and (min-width: 375px) {
+                padding: 0.61em 0.75em;
+            }
+            @media only screen and (min-width: 425px) {
+                padding: 0.41em 0.75em;
+            }
+            @media only screen and (min-width: 768px) {
+                padding: 0.51em 0.75em;
+            }
+            @media only screen and (min-width: 769px) {
+                padding: 0.31em 0.75em;
+            }
+            
+            .heading {
+                margin-bottom: 0em;
+                @media only screen and (min-width: 320px) {
+                    @include rfs(1.05rem);
+                }
+                @media only screen and (min-width: 375px) {
+                    @include rfs(1.1rem);
+                }
+                @media only screen and (min-width: 425px) {
+                    @include rfs(1.25rem);
+                }
+                @media only screen and (min-width: 768px) {
+                    @include rfs(1.35rem);
+                }
+                @media only screen and (min-width: 769px) {
+                    @include rfs(1.45rem);
+                }
+            }
+            .sub-heading {
+                margin-bottom: 0em;
+                @media only screen and (min-width: 320px) {
+                    @include rfs(0.77rem);
+                }
+                @media only screen and (min-width: 375px) {
+                    @include rfs(0.8rem);
+                }
+                @media only screen and (min-width: 425px) {
+                    @include rfs(1.05rem);
+                }
+                @media only screen and (min-width: 768px) {
+                    @include rfs(1.15rem);
+                }
+                @media only screen and (min-width: 769px) {
+                    @include rfs(1.25rem);
+                }
+            }
+        }
+        &.banner {
+            border-radius: 25px 25px 25px 25px;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em 1em;
+            .heading {
+                margin: 0;
+                @include rfs(1.5rem);
+            }
+        }
+    }    
+}

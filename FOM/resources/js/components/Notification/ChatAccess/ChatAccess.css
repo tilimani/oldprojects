@@ -1,0 +1,425 @@
+.Chat-access {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ededed;
+}
+
+.Chat-access:hover {
+  background-color: #e6e6e6;
+}
+
+.Chat-access .message-hour {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: small;
+}
+
+.Chat-access .username {
+  font-size: medium;
+  display: block;
+}
+
+.Chat-access .vico-name {
+  font-size: small;
+  display: block;
+}
+
+.Chat-access .message {
+  font-size: large;
+}
+
+.Chat-access .user-image {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access .user-flag {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.unread {
+  font-family: NunitoBold;
+}
+
+.read {
+  font-family: NunitoRegular;
+}
+
+.message-hour.unread {
+  color: #ea960f;
+}
+
+.visit-type {
+  position: absolute;
+  top: 35px;
+  right: 5px;
+  height: 35px;
+  width: 40px;
+}
+
+.visit-type.online {
+  content: '\A';
+  background: url("/images/visit-off.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon.accepted {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("/images/accepted.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon.payment {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("/images/accepted.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon.now {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("/images/now.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon.message {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background: url("/images/message.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Chat-access.accepted {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ededed;
+}
+
+.Chat-access.accepted .message-hour {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Chat-access.accepted .username {
+  font-size: 20px;
+  display: block;
+}
+
+.Chat-access.accepted .vico-name {
+  font-size: 16px;
+  display: block;
+  color: #73c950;
+}
+
+.Chat-access.accepted .message {
+  color: #73c950;
+  display: inline-block;
+}
+
+.Chat-access.accepted .message .icon {
+  height: 20px;
+  width: 20px;
+}
+
+.Chat-access.accepted .user-image {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.accepted .user-flag {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.accepted {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ededed;
+}
+
+.Chat-access.accepted .message-hour {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Chat-access.accepted .username {
+  font-size: 20px;
+  display: block;
+}
+
+.Chat-access.accepted .vico-name {
+  color: #ea960f;
+}
+
+.Chat-access.accepted .message {
+  color: #ea960f;
+  display: inline-block;
+}
+
+.Chat-access.accepted .message .icon {
+  height: 20px;
+  width: 20px;
+}
+
+.Chat-access.accepted .user-image {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.accepted .user-flag {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.visit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ededed;
+}
+
+.Chat-access.visit .message-hour {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Chat-access.visit .username {
+  font-size: 20px;
+  display: block;
+}
+
+.Chat-access.visit .vico-name {
+  font-size: 16px;
+  display: block;
+}
+
+.Chat-access.visit .message {
+  color: #ea960f;
+}
+
+.Chat-access.visit .user-image {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.visit .user-flag {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.now {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ededed;
+}
+
+.Chat-access.now .message-hour {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Chat-access.now .username {
+  font-size: 20px;
+  display: block;
+}
+
+.Chat-access.now .vico-name {
+  font-size: 16px;
+  display: block;
+}
+
+.Chat-access.now .message .icon {
+  height: 20px;
+  width: 20px;
+}
+
+.Chat-access.now .user-image {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.now .user-flag {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.canceled {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ededed;
+}
+
+.Chat-access.canceled .message-hour {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Chat-access.canceled .username {
+  font-size: 20px;
+  display: block;
+}
+
+.Chat-access.canceled .vico-name {
+  font-size: 16px;
+  display: block;
+  text-decoration: line-through;
+}
+
+.Chat-access.canceled .message {
+  text-decoration: line-through;
+}
+
+.Chat-access.canceled .message .icon {
+  display: none;
+}
+
+.Chat-access.canceled .user-image-opacity::after {
+  content: '\A';
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+}
+
+.Chat-access.canceled .user-image {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.Chat-access.canceled .flag-image-opacity::after {
+  content: '\A';
+  height: 15px;
+  width: 15px;
+  top: 35px;
+  left: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  position: absolute;
+}
+
+.Chat-access.canceled .user-flag {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+}
+
+.timer {
+  font-weight: 600;
+  margin: 0 0.5em;
+}
+
+.vico-name {
+  color: #ea960f;
+}
+/*# sourceMappingURL=ChatAccess.css.map */

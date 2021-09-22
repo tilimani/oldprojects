@@ -1,0 +1,32 @@
+.notification-menu{
+    // width: 100vw !important;
+}
+
+.dropdown-menu.show.custom{
+    @media screen and (min-width: 320px) {
+        left: -67.5% !important;
+    }   
+    @media screen and (min-width: 375px) {
+        left: -82.5% !important;
+    }
+    @media screen and (min-width: 425px) {
+        left: -100.5% !important;
+        
+    }
+    @media screen and (min-width: 768px) {
+        left: -213.5% !important;
+    }
+    @media screen and (min-width: 1024px) {
+        left: -90.5% !important;
+    }
+    @media screen and (min-width: 1440px) {
+        left: -182.5% !important;
+    }
+    border-top: none;
+    margin-top: 1.55em;
+    padding-top: 0.55em;
+    border-bottom-right-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+    width: 100vw !important;
+    
+}

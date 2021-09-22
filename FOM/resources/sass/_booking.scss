@@ -1,0 +1,128 @@
+/*Button for whatsapp contact in booking show*/
+.whatsappNumber-Button {
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    padding: 8px;
+    text-decoration: none !important;
+}
+
+.whatsappNumber-Button:hover {
+    background: #178640;
+    color: white;
+}
+
+/*Styles of progressbar in show/request of bookings*/
+#progressbar {
+    margin-bottom: 0;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    padding: 0;
+}
+
+#progressbar .active {
+    color: #3a3a3a;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: #dadada;
+    /*text-transform: uppercase;*/
+    font-size: 12px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    z-index: 10000;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: white;
+    background: #dadada;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #dadada;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+    /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
+
+.booking-show-process-circle {
+    width: 6rem;
+    position: absolute;
+    right: -0.4rem;
+    top: .5rem;
+}
+
+/*Loader Modal*/
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid orange;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 0.6s linear infinite;
+    /* Safari */
+    animation: spin 0.5s linear infinite;
+}
+
+.modal-loader {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.chat-box .input-group {
+    padding-right: 1rem !important;
+}

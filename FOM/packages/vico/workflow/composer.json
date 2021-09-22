@@ -1,0 +1,12 @@
+{
+    "name": "vico/workflow",
+    "description": "Workflow per vico company",
+    "authors": [
+        {
+            "name": "Get Vico",
+            "email": "hello@getvico.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

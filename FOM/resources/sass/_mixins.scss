@@ -1,0 +1,64 @@
+@for $i from 1 through 20{
+    .fs-px-#{$i}{ 
+        //font size in px size #{$i}
+        @include font-source-sans($i, false, false, false, "px");
+    }
+}
+
+@for $i from 8 through 30{
+    .fs-em-#{$i}{
+        //font size in em size
+        @include font-source-sans($i/10, false, false, false, "em");
+    }
+}
+
+@for $i from 8 through 30{
+    .fs-rem-#{$i}{
+        //font size in em size
+        @media screen and (min-width: $mobile-s){
+            @include font-source-sans($i/10, false, false, false, "rem");    
+        }
+        @media screen and (min-width: $mobile-m){
+            @include font-source-sans(($i*1.18)/10, false, false, false, "rem");    
+        }
+        @media screen and (min-width: $mobile-l){
+            @include font-source-sans(($i*1.28)/10, false, false, false, "rem");    
+        }
+        
+    }
+}
+
+@for $i from 1 through 8{
+    .rotate-deg-#{$i*45}{
+        @include rotate-deg($i*45);
+    }
+}
+
+@for $i from 1 through 5{
+    @media screen and (max-width: $mobile-s){
+        .w-ms-#{$i*20}{
+            @include width($i*20);
+        }
+    }
+    @media screen and (max-width: $mobile-m){
+        .w-mm-#{$i*20}{
+            @include width($i*20);
+        }
+    }
+    @media screen and (max-width: $mobile-l){
+        .w-ml-#{$i*20}{
+            @include width($i*20);
+        }
+    }
+    @media screen and (max-width: $tablet){
+        .w-t-#{$i*20}{
+            @include width($i*20);
+        }
+    }
+    @media screen and (max-width: $laptop){
+        .w-l-#{$i}{
+            @include width($i*20);
+        }
+    }
+    
+}

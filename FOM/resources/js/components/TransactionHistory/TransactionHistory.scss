@@ -1,0 +1,110 @@
+.month-unselected {
+  font-size: 1.3rem;
+  color: lightgray;
+}
+.month-selected {
+  font-size: 1.5rem;
+  color: #ff9b00;
+}
+
+.month-carousel {
+  position: relative;
+  // display: flex;
+  // flex-flow: row nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+}
+
+.month-slider-wrapper {
+  display: flex;
+  position: absolute;
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  .month {
+    flex: 1;
+    text-align: center;
+    border: none;
+    min-width: 200px;
+    opacity: 0.7;
+    transform: scale(0.8);
+    box-shadow: none;
+    color: black;
+    transition: opacity 300ms linear, color 300ms linear,
+      transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+      &::after{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background-color: #ff9b00;
+      }
+  }
+}
+
+$i: 0;
+@for $i from 0 through 29 {
+  .month-slider.active-slide-#{$i} #month-#{$i} {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #ff9b00;
+    position: relative;
+
+    &::after{
+      transition: width 300ms 200ms ease-out;
+      width: 100%;
+    }
+  }
+}
+
+.carousel-months {
+  height: 100%;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 120%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &:after {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  & .btn-prev,
+  & .btn-next{
+    height: inherit;
+    border: none;
+    font-size: 1.2rem;
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    font-weight: 800;
+    color: lightgray;
+  }
+  & .btn-prev{
+      transform: rotateY(180deg);
+      top: 0;
+      left: 0;
+      z-index: 2;
+  }
+  & .btn-next{
+      top: 0;
+      right: 0;
+      z-index: 3;
+  }
+}
+
+.month-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}

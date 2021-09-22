@@ -1,0 +1,27 @@
+.text-description {
+  font-size: 12px;
+}
+
+.react-datepicker-wrapper {
+  width: 50%;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #ea960f;
+}
+
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: #c57e0b;
+}
+
+.process-deny-button {
+  background-color: white;
+  border-color: white;
+  color: black !important;
+}
+
+.process-deny-button:hover {
+  background-color: #cccccc;
+  border-color: white;
+}
+/*# sourceMappingURL=DenyModal.css.map */

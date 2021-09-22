@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="26.5" width="20.5">
+  <defs>
+    <path id="path-1" opacity="1" fill-rule="evenodd" d="M10.250016308822346,0.25 C4.719203411133338,0.25 0.250032617644697,4.595216970479111 0.250032617644697,9.963824810453302 C0.23290935789952985,15.751855137925476 6.962350437750242,23.335013711889026 9.393853321563984,25.885102435876767 C9.856181334683498,26.37163252137443 10.643851282961192,26.37163252137443 11.106179296080706,25.885102435876767 C13.520558920149282,23.335013711889026 20.249999999999993,15.718301338925638 20.249999999999993,9.963824810453302 C20.249999999999993,4.595216970479111 15.780829206511353,0.25 10.250016308822346,0.25Z"/>
+    <ellipse id="ellipse-2" opacity="1" rx="4.70889642992098" ry="4.613647362477838" cx="10.250016308822534" cy="10.13159380545331"/>
+  </defs>
+  <g opacity="1">
+    <g opacity="1">
+      <use xlink:href="#path-1" fill-opacity="0" stroke="rgb(130,130,130)" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g opacity="1">
+      <use xlink:href="#ellipse-2" fill-opacity="0" stroke="rgb(130,130,130)" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
